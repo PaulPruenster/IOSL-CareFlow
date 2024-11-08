@@ -1,0 +1,930 @@
+[
+    {
+        "de": "Abtei",
+        "it": "Badia",
+        "lat": "46.610124",
+        "lon": "11.893487",
+        "residents": "3.533",
+        "area": "82"
+    },
+    {
+        "de": "Ahrntal",
+        "it": "Valle Aurina",
+        "lat": "46.98829205",
+        "lon": "11.943646067399136",
+        "residents": "5.989",
+        "area": "187"
+    },
+    {
+        "de": "Aldein",
+        "it": "Aldino",
+        "lat": "46.3686753",
+        "lon": "11.3543243",
+        "residents": "1.631",
+        "area": "63"
+    },
+    {
+        "de": "Algund",
+        "it": "Lagundo",
+        "lat": "46.6825194",
+        "lon": "11.1230691",
+        "residents": "5.050",
+        "area": "23"
+    },
+    {
+        "de": "Altrei",
+        "it": "Anterivo",
+        "lat": "46.279746700000004",
+        "lon": "11.367961064571444",
+        "residents": "399",
+        "area": "11"
+    },
+    {
+        "de": "Andrian",
+        "it": "Andriano",
+        "lat": "46.5176161",
+        "lon": "11.231373",
+        "residents": "1.012",
+        "area": "4"
+    },
+    {
+        "de": "Auer",
+        "it": "Ora",
+        "lat": "35.7032751",
+        "lon": "-0.6492976",
+        "residents": "3.859",
+        "area": "11"
+    },
+    {
+        "de": "Barbian",
+        "it": "Barbiano",
+        "lat": "46.6032574",
+        "lon": "11.5198158",
+        "residents": "1.725",
+        "area": "24"
+    },
+    {
+        "de": "Bozen",
+        "it": "Bolzano",
+        "lat": "46.4981125",
+        "lon": "11.3547801",
+        "residents": "021008",
+        "area": "106.601"
+    },
+    {
+        "de": "Branzoll",
+        "it": "Bronzolo",
+        "lat": "46.4042617",
+        "lon": "11.3200548",
+        "residents": "2.758",
+        "area": "7"
+    },
+    {
+        "de": "Brenner",
+        "it": "Brennero",
+        "lat": "47.0037797",
+        "lon": "11.5045574",
+        "residents": "2.308",
+        "area": "114"
+    },
+    {
+        "de": "Brixen",
+        "it": "Bressanone",
+        "lat": "46.7165491",
+        "lon": "11.657851",
+        "residents": "021011",
+        "area": "22.728"
+    },
+    {
+        "de": "Bruneck",
+        "it": "Brunico",
+        "lat": "46.7963194",
+        "lon": "11.9355121",
+        "residents": "021013",
+        "area": "16.995"
+    },
+    {
+        "de": "Burgstall",
+        "it": "Postal",
+        "lat": "46.6075829",
+        "lon": "11.1933244",
+        "residents": "1.964",
+        "area": "6"
+    },
+    {
+        "de": "Corvara",
+        "it": "Corvara in Badia",
+        "lat": "46.5495743",
+        "lon": "11.8740339",
+        "residents": "021026",
+        "area": "1.392"
+    },
+    {
+        "de": "Deutschnofen",
+        "it": "Nova Ponente",
+        "lat": "46.4139929",
+        "lon": "11.4251813",
+        "residents": "021059",
+        "area": "4.016"
+    },
+    {
+        "de": "Enneberg",
+        "it": "Marebbe",
+        "lat": "46.64887905",
+        "lon": "12.02693829110203",
+        "residents": "3.159",
+        "area": "161"
+    },
+    {
+        "de": "Eppan an der Weinstraße",
+        "it": "Appiano sulla Strada del Vino",
+        "lat": "46.4553328",
+        "lon": "11.2590488",
+        "residents": "14.741",
+        "area": "59"
+    },
+    {
+        "de": "Feldthurns",
+        "it": "Velturno",
+        "lat": "46.6686743",
+        "lon": "11.5984388",
+        "residents": "3.049",
+        "area": "24"
+    },
+    {
+        "de": "Franzensfeste",
+        "it": "Fortezza",
+        "lat": "46.7868474",
+        "lon": "11.61245",
+        "residents": "1.061",
+        "area": "61"
+    },
+    {
+        "de": "Freienfeld",
+        "it": "Campo di Trens",
+        "lat": "46.85718665",
+        "lon": "11.508954610620332",
+        "residents": "2.679",
+        "area": "95"
+    },
+    {
+        "de": "Gais",
+        "it": "Gais",
+        "lat": "46.8331565",
+        "lon": "11.9474837",
+        "residents": "3.230",
+        "area": "60"
+    },
+    {
+        "de": "Gargazon",
+        "it": "Gargazzone",
+        "lat": "46.5847807",
+        "lon": "11.2027298",
+        "residents": "1.811",
+        "area": "4"
+    },
+    {
+        "de": "Glurns",
+        "it": "Glorenza",
+        "lat": "46.6714924",
+        "lon": "10.5539127",
+        "residents": "924",
+        "area": "13"
+    },
+    {
+        "de": "Graun im Vinschgau",
+        "it": "Curon Venosta",
+        "lat": "46.8037378",
+        "lon": "10.555045061582057",
+        "residents": "2.372",
+        "area": "210"
+    },
+    {
+        "de": "Gsies",
+        "it": "Valle di Casies",
+        "lat": "46.824096499999996",
+        "lon": "12.232500513786313",
+        "residents": "2.339",
+        "area": "108"
+    },
+    {
+        "de": "Hafling",
+        "it": "Avelengo",
+        "lat": "46.644615",
+        "lon": "11.224384",
+        "residents": "811",
+        "area": "26"
+    },
+    {
+        "de": "Innichen",
+        "it": "San Candido",
+        "lat": "46.7328719",
+        "lon": "12.2791673",
+        "residents": "021077",
+        "area": "3.405"
+    },
+    {
+        "de": "Jenesien",
+        "it": "San Genesio Atesino",
+        "lat": "46.5350348",
+        "lon": "11.3313839",
+        "residents": "3.048",
+        "area": "66"
+    },
+    {
+        "de": "Kaltern an der Weinstraße",
+        "it": "Caldaro sulla Strada del Vino",
+        "lat": "46.4132594",
+        "lon": "11.2462025",
+        "residents": "8.107",
+        "area": "47"
+    },
+    {
+        "de": "Karneid",
+        "it": "Cornedo all'Isarco",
+        "lat": "46.4899125",
+        "lon": "11.4083882",
+        "residents": "3.433",
+        "area": "40"
+    },
+    {
+        "de": "Kastelbell-Tschars",
+        "it": "Castelbello-Ciardes",
+        "lat": "46.6221611",
+        "lon": "10.923998550347491",
+        "residents": "2.309",
+        "area": "53"
+    },
+    {
+        "de": "Kastelruth",
+        "it": "Castelrotto",
+        "lat": "46.54753885",
+        "lon": "11.608297115541967",
+        "residents": "021019",
+        "area": "6.891"
+    },
+    {
+        "de": "Kiens",
+        "it": "Chienes",
+        "lat": "46.8093808",
+        "lon": "11.8408721",
+        "residents": "2.986",
+        "area": "33"
+    },
+    {
+        "de": "Klausen",
+        "it": "Chiusa",
+        "lat": "37.6772195",
+        "lon": "13.270521",
+        "residents": "021022",
+        "area": "5.218"
+    },
+    {
+        "de": "Kuens",
+        "it": "Caines",
+        "lat": "46.6994802",
+        "lon": "11.1694866",
+        "residents": "388",
+        "area": "1"
+    },
+    {
+        "de": "Kurtatsch an der Weinstraße",
+        "it": "Cortaccia sulla Strada del Vino",
+        "lat": "46.3134726",
+        "lon": "11.2235011",
+        "residents": "2.184",
+        "area": "30"
+    },
+    {
+        "de": "Kurtinig an der Weinstraße",
+        "it": "Cortina sulla Strada del Vino",
+        "lat": "46.2687016",
+        "lon": "11.2226851",
+        "residents": "661",
+        "area": "1"
+    },
+    {
+        "de": "Laas",
+        "it": "Lasa",
+        "lat": "43.1571441",
+        "lon": "-1.2601799",
+        "residents": "4.078",
+        "area": "110"
+    },
+    {
+        "de": "Lajen",
+        "it": "Laion",
+        "lat": "46.6092289",
+        "lon": "11.564263",
+        "residents": "021039",
+        "area": "2.743"
+    },
+    {
+        "de": "Lana",
+        "it": "Lana",
+        "lat": "46.6160189",
+        "lon": "11.1448586",
+        "residents": "12.415",
+        "area": "36"
+    },
+    {
+        "de": "Latsch",
+        "it": "Laces",
+        "lat": "46.6173435",
+        "lon": "10.8595388",
+        "residents": "5.202",
+        "area": "78"
+    },
+    {
+        "de": "Laurein",
+        "it": "Lauregno",
+        "lat": "46.4544136",
+        "lon": "11.0620153",
+        "residents": "325",
+        "area": "14"
+    },
+    {
+        "de": "Leifers",
+        "it": "Laives",
+        "lat": "46.6546028",
+        "lon": "4.835708883348261",
+        "residents": "18.183",
+        "area": "24"
+    },
+    {
+        "de": "Lüsen",
+        "it": "Luson",
+        "lat": "46.7464659",
+        "lon": "11.7610843",
+        "residents": "021044",
+        "area": "1.546"
+    },
+    {
+        "de": "Mals",
+        "it": "Malles Venosta",
+        "lat": "46.6879187",
+        "lon": "10.5465492",
+        "residents": "5.233",
+        "area": "247"
+    },
+    {
+        "de": "Margreid an der Weinstraße",
+        "it": "Magre sulla Strada del Vino",
+        "lat": "46.2873885",
+        "lon": "11.2098464",
+        "residents": "1.292",
+        "area": "13"
+    },
+    {
+        "de": "Marling",
+        "it": "Marlengo",
+        "lat": "46.6556318",
+        "lon": "11.1405342",
+        "residents": "2.838",
+        "area": "12"
+    },
+    {
+        "de": "Martell",
+        "it": "Martello",
+        "lat": "46.51531885",
+        "lon": "10.721431145346715",
+        "residents": "828",
+        "area": "143"
+    },
+    {
+        "de": "Meran",
+        "it": "Merano",
+        "lat": "46.6695547",
+        "lon": "11.1594185",
+        "residents": "40.759",
+        "area": "26"
+    },
+    {
+        "de": "Mölten",
+        "it": "Meltina",
+        "lat": "46.5863916",
+        "lon": "11.2561557",
+        "residents": "1.705",
+        "area": "36"
+    },
+    {
+        "de": "Montan an der Weinstraße",
+        "it": "Montagna sulla Strada del Vino",
+        "lat": "TODO",
+        "lon": "TODO",
+        "residents": "1.690",
+        "area": "18"
+    },
+    {
+        "de": "Moos in Passeier",
+        "it": "Moso in Passiria",
+        "lat": "46.8318323",
+        "lon": "11.1672933",
+        "residents": "2.046",
+        "area": "194"
+    },
+    {
+        "de": "Mühlbach",
+        "it": "Rio di Pusteria",
+        "lat": "46.7959461",
+        "lon": "11.6668266",
+        "residents": "3.142",
+        "area": "84"
+    },
+    {
+        "de": "Mühlwald",
+        "it": "Selva dei Molini",
+        "lat": "46.8907465",
+        "lon": "11.8566601",
+        "residents": "1.399",
+        "area": "104"
+    },
+    {
+        "de": "Nals",
+        "it": "Nalles",
+        "lat": "46.5434871",
+        "lon": "11.2046272",
+        "residents": "2.075",
+        "area": "12"
+    },
+    {
+        "de": "Naturns",
+        "it": "Naturno",
+        "lat": "46.6498856",
+        "lon": "11.0041954",
+        "residents": "6.015",
+        "area": "67"
+    },
+    {
+        "de": "Natz-Schabs",
+        "it": "Naz-Sciaves",
+        "lat": "46.7630738",
+        "lon": "11.67793465387931",
+        "residents": "3.281",
+        "area": "15"
+    },
+    {
+        "de": "Neumarkt",
+        "it": "Egna",
+        "lat": "46.3169161",
+        "lon": "11.2725698",
+        "residents": "5.433",
+        "area": "23"
+    },
+    {
+        "de": "Niederdorf",
+        "it": "Villabassa",
+        "lat": "46.7382384",
+        "lon": "12.1713018",
+        "residents": "1.581",
+        "area": "17"
+    },
+    {
+        "de": "Olang",
+        "it": "Valdaora",
+        "lat": "46.759829",
+        "lon": "12.030987",
+        "residents": "021106",
+        "area": "3.166"
+    },
+    {
+        "de": "Partschins",
+        "it": "Parcines",
+        "lat": "46.6838481",
+        "lon": "11.0735201",
+        "residents": "3.887",
+        "area": "55"
+    },
+    {
+        "de": "Percha",
+        "it": "Perca",
+        "lat": "46.7943067",
+        "lon": "11.982383",
+        "residents": "1.656",
+        "area": "30"
+    },
+    {
+        "de": "Pfalzen",
+        "it": "Falzes",
+        "lat": "46.8119803",
+        "lon": "11.8840064",
+        "residents": "2.977",
+        "area": "33"
+    },
+    {
+        "de": "Pfatten",
+        "it": "Vadena",
+        "lat": "46.4139949",
+        "lon": "11.3050772",
+        "residents": "1.076",
+        "area": "13"
+    },
+    {
+        "de": "Pfitsch",
+        "it": "Val di Vizze",
+        "lat": "46.948993099999996",
+        "lon": "11.577765059458857",
+        "residents": "3.065",
+        "area": "142"
+    },
+    {
+        "de": "Plaus",
+        "it": "Plaus",
+        "lat": "46.6565754",
+        "lon": "11.0414981",
+        "residents": "740",
+        "area": "4"
+    },
+    {
+        "de": "Prad am Stilfserjoch",
+        "it": "Prato allo Stelvio",
+        "lat": "46.603767250000004",
+        "lon": "10.581909344023622",
+        "residents": "3.734",
+        "area": "51"
+    },
+    {
+        "de": "Prags",
+        "it": "Braies",
+        "lat": "46.68862505",
+        "lon": "12.10375651926822",
+        "residents": "691",
+        "area": "89"
+    },
+    {
+        "de": "Prettau",
+        "it": "Predoi",
+        "lat": "47.0407407",
+        "lon": "12.1058909",
+        "residents": "528",
+        "area": "86"
+    },
+    {
+        "de": "Proveis",
+        "it": "Proves",
+        "lat": "46.4774258",
+        "lon": "11.0224369",
+        "residents": "258",
+        "area": "18"
+    },
+    {
+        "de": "Rasen-Antholz",
+        "it": "Rasun Anterselva",
+        "lat": "46.83901515",
+        "lon": "12.111611301365008",
+        "residents": "2.911",
+        "area": "120"
+    },
+    {
+        "de": "Ratschings",
+        "it": "Racines",
+        "lat": "48.0496675",
+        "lon": "3.8427827",
+        "residents": "4.580",
+        "area": "203"
+    },
+    {
+        "de": "Riffian",
+        "it": "Rifiano",
+        "lat": "46.7036399",
+        "lon": "11.1814431",
+        "residents": "1.370",
+        "area": "35"
+    },
+    {
+        "de": "Ritten",
+        "it": "Renon",
+        "lat": "46.5629355",
+        "lon": "11.441434954745159",
+        "residents": "8.062",
+        "area": "111"
+    },
+    {
+        "de": "Rodeneck",
+        "it": "Rodengo",
+        "lat": "46.7807747",
+        "lon": "11.6897571",
+        "residents": "1.253",
+        "area": "29"
+    },
+    {
+        "de": "Salurn an der Weinstraße",
+        "it": "Salorno sulla Strada del Vino",
+        "lat": "46.2396083",
+        "lon": "11.2110749",
+        "residents": "3.768",
+        "area": "33"
+    },
+    {
+        "de": "Sand in Taufers",
+        "it": "Campo Tures",
+        "lat": "46.9192363",
+        "lon": "11.9551824",
+        "residents": "5.685",
+        "area": "164"
+    },
+    {
+        "de": "St. Christina in Gröden",
+        "it": "Santa Cristina Valgardena",
+        "lat": "46.5588749",
+        "lon": "11.7200359",
+        "residents": "2.001",
+        "area": "31"
+    },
+    {
+        "de": "St. Leonhard in Passeier",
+        "it": "San Leonardo in Passiria",
+        "lat": "46.8118934",
+        "lon": "11.2471364",
+        "residents": "3.615",
+        "area": "88"
+    },
+    {
+        "de": "St. Lorenzen",
+        "it": "San Lorenzo di Sebato",
+        "lat": "46.7834543",
+        "lon": "11.9030709",
+        "residents": "3.845",
+        "area": "51"
+    },
+    {
+        "de": "St. Martin in Passeier",
+        "it": "San Martino in Passiria",
+        "lat": "46.7839388",
+        "lon": "11.2267986",
+        "residents": "3.235",
+        "area": "30"
+    },
+    {
+        "de": "St. Martin in Thurn",
+        "it": "San Martino in Badia",
+        "lat": "46.6509279",
+        "lon": "11.841676782715789",
+        "residents": "1.761",
+        "area": "76"
+    },
+    {
+        "de": "St. Pankraz",
+        "it": "San Pancrazio",
+        "lat": "43.4064796",
+        "lon": "11.6531287",
+        "residents": "1.517",
+        "area": "63"
+    },
+    {
+        "de": "St. Ulrich in Gröden",
+        "it": "Ortisei",
+        "lat": "46.5752077",
+        "lon": "11.6721382",
+        "residents": "4.833",
+        "area": "24"
+    },
+    {
+        "de": "Sarntal",
+        "it": "Sarentino",
+        "lat": "46.695258550000005",
+        "lon": "11.387379376463915",
+        "residents": "7.190",
+        "area": "302"
+    },
+    {
+        "de": "Schenna",
+        "it": "Scena",
+        "lat": "46.6900462",
+        "lon": "11.1865628",
+        "residents": "2.980",
+        "area": "48"
+    },
+    {
+        "de": "Schlanders",
+        "it": "Silandro",
+        "lat": "46.6280688",
+        "lon": "10.7734765",
+        "residents": "6.290",
+        "area": "115"
+    },
+    {
+        "de": "Schluderns",
+        "it": "Sluderno",
+        "lat": "46.6645383",
+        "lon": "10.5848173",
+        "residents": "1.834",
+        "area": "20"
+    },
+    {
+        "de": "Schnals",
+        "it": "Senales",
+        "lat": "46.7277242",
+        "lon": "10.862756493024182",
+        "residents": "1.261",
+        "area": "210"
+    },
+    {
+        "de": "Sexten",
+        "it": "Sesto",
+        "lat": "46.7027433",
+        "lon": "12.350544",
+        "residents": "021092",
+        "area": "1.846"
+    },
+    {
+        "de": "Sterzing",
+        "it": "Vipiteno",
+        "lat": "46.8963235",
+        "lon": "11.4319398",
+        "residents": "6.968",
+        "area": "33"
+    },
+    {
+        "de": "Stilfs",
+        "it": "Stelvio",
+        "lat": "46.542438700000005",
+        "lon": "10.55782937377889",
+        "residents": "1.139",
+        "area": "140"
+    },
+    {
+        "de": "Taufers im Münstertal",
+        "it": "Tubre",
+        "lat": "46.645612",
+        "lon": "10.464153",
+        "residents": "962",
+        "area": "45"
+    },
+    {
+        "de": "Terenten",
+        "it": "Terento",
+        "lat": "46.8288003",
+        "lon": "11.7760163",
+        "residents": "1.779",
+        "area": "42"
+    },
+    {
+        "de": "Terlan",
+        "it": "Terlano",
+        "lat": "46.5293011",
+        "lon": "11.2486777",
+        "residents": "4.749",
+        "area": "18"
+    },
+    {
+        "de": "Tiers",
+        "it": "Tires",
+        "lat": "46.4673482",
+        "lon": "11.52748",
+        "residents": "999",
+        "area": "42"
+    },
+    {
+        "de": "Tirol",
+        "it": "Tirolo",
+        "lat": "47.223193",
+        "lon": "11.5261028",
+        "residents": "2.462",
+        "area": "25"
+    },
+    {
+        "de": "Tisens",
+        "it": "Tesimo",
+        "lat": "46.5638983",
+        "lon": "11.1694971",
+        "residents": "1.980",
+        "area": "39"
+    },
+    {
+        "de": "Toblach",
+        "it": "Dobbiaco",
+        "lat": "46.735425",
+        "lon": "12.2242801",
+        "residents": "3.355",
+        "area": "126"
+    },
+    {
+        "de": "Tramin an der Weinstraße",
+        "it": "Termeno sulla Strada del Vino",
+        "lat": "46.3415121",
+        "lon": "11.2422716",
+        "residents": "3.396",
+        "area": "18"
+    },
+    {
+        "de": "Truden im Naturpark",
+        "it": "Trodena nel Parco Naturale",
+        "lat": "46.3221428",
+        "lon": "11.3498119",
+        "residents": "1.045",
+        "area": "20"
+    },
+    {
+        "de": "Tscherms",
+        "it": "Cermes",
+        "lat": "46.6346188",
+        "lon": "11.146564",
+        "residents": "1.564",
+        "area": "6"
+    },
+    {
+        "de": "Ulten",
+        "it": "Ultimo",
+        "lat": "46.5119943",
+        "lon": "10.8994926932971",
+        "residents": "2.897",
+        "area": "208"
+    },
+    {
+        "de": "Unsere Liebe Frau im Walde-St. Felix",
+        "it": "Senale-San Felice",
+        "lat": "46.5095314",
+        "lon": "11.137422530984782",
+        "residents": "781",
+        "area": "27"
+    },
+    {
+        "de": "Vahrn",
+        "it": "Varna",
+        "lat": "43.2073873",
+        "lon": "27.9166653",
+        "residents": "4.894",
+        "area": "70"
+    },
+    {
+        "de": "Villanders",
+        "it": "Villandro",
+        "lat": "46.6329339",
+        "lon": "11.5401011",
+        "residents": "1.892",
+        "area": "43"
+    },
+    {
+        "de": "Villnöß",
+        "it": "Funes",
+        "lat": "42.3140552",
+        "lon": "-1.8030376",
+        "residents": "2.545",
+        "area": "81"
+    },
+    {
+        "de": "Vintl",
+        "it": "Vandoies",
+        "lat": "46.87603555",
+        "lon": "11.720903662110466",
+        "residents": "3.308",
+        "area": "110"
+    },
+    {
+        "de": "Völs am Schlern",
+        "it": "Fie allo Sciliar",
+        "lat": "46.517598",
+        "lon": "11.5026136",
+        "residents": "021031",
+        "area": "3.627"
+    },
+    {
+        "de": "Vöran",
+        "it": "Verano",
+        "lat": "46.6053657",
+        "lon": "11.2262711",
+        "residents": "985",
+        "area": "22"
+    },
+    {
+        "de": "Waidbruck",
+        "it": "Ponte Gardena",
+        "lat": "46.5982157",
+        "lon": "11.5325098",
+        "residents": "202",
+        "area": "2"
+    },
+    {
+        "de": "Welsberg-Taisten",
+        "it": "Monguelfo-Tesido",
+        "lat": "46.78114465",
+        "lon": "12.118921771523121",
+        "residents": "2.880",
+        "area": "46"
+    },
+    {
+        "de": "Welschnofen",
+        "it": "Nova Levante",
+        "lat": "46.430234",
+        "lon": "11.5389505",
+        "residents": "021058",
+        "area": "2.023"
+    },
+    {
+        "de": "Wengen",
+        "it": "La Valle",
+        "lat": "18.2145861",
+        "lon": "-63.0517759",
+        "residents": "1.402",
+        "area": "39"
+    },
+    {
+        "de": "Wolkenstein in Gröden",
+        "it": "Selva di Valgardena",
+        "lat": "46.55619",
+        "lon": "11.755865",
+        "residents": "2.592",
+        "area": "53"
+    }
+]
