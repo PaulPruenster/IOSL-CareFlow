@@ -3,6 +3,7 @@ import { parse } from "csv-parse";
 import { Transport } from "../models/transport";
 
 export const readCSV = (filePath: string): Promise<Transport[]> => {
+	console.log("Reading CSV file:", filePath);
 	return new Promise((resolve, reject) => {
 		const transports: Transport[] = [];
 		fs.createReadStream(filePath)
