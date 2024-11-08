@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 // Replace with your OpenRouteService API key
 const API_KEY = 'YOUR_API_KEY';
 
@@ -11,22 +9,23 @@ const BOZEN_COORDINATES = [11.35478, 46.49829];    // [Longitude, Latitude]
  * Fetches the route from Jenesien to Bozen using OpenRouteService API.
  */
 async function getRoute() {
-    const url = 'https://api.openrouteservice.org/v2/directions/driving-car';
+    const url = `https://api.openrouteservice.org/v2/directions/driving-car?start=${JENESIEN_COORDINATES.join(',')}&end=${BOZEN_COORDINATES.join(',')}`;
 
     try {
-        const response = await axios.get(url, {
+        const response = await fetch(url, {
+            method: 'GET',
             headers: {
                 Authorization: API_KEY,
             },
-            params: {
-                start: JENESIEN_COORDINATES.join(','), // Starting coordinates
-                end: BOZEN_COORDINATES.join(','),       // Ending coordinates
-            },
         });
 
-        // Display route information
-        console.log('Route from Jenesien to Bozen:', response.data);
-        return response.data;
+        if (!response.ok) {
+            throw new Error(`Error fetching the route: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        console.log('Route from Jenesien to Bozen:', data);
+        return data;
     } catch (error) {
         console.error('Error fetching the route:', error);
     }

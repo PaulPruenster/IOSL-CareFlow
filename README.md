@@ -6,4 +6,6 @@ main push
 
 # Questions
 
-Wissn mir welche autos mit grot zu verfügung hoben und wo sie sein
+- Wissn mir welche autos mit grot zu verfügung hoben und wo sie sein
+- Kennen stienete leit a liegen
+- 
