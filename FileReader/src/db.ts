@@ -1,5 +1,5 @@
 import sqlite3 from "sqlite3";
-const db = new sqlite3.Database(':memory:');
+const db = new sqlite3.Database('iosl.db');
 
 db.serialize(() => {
     db.run("CREATE TABLE lorem (info TEXT)");
