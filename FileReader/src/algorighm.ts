@@ -25,7 +25,7 @@ type Step = {
     mode: string;
     driving_side: string;
     name: string;
-    intersections: any;
+    intersections: Intersection[];
     weight: number;
     duration: number;
     distance: number;
@@ -39,10 +39,20 @@ type Maneuver = {
     type: string;
 };
 
+type Intersection = {
+    out: number;
+    in?: number;
+    entry: boolean[];
+    bearings: number[];
+    location: [number, number];
+};
+
 
 const JENESIEN: Place = { lon: 11.3313839, lat: 46.5350348 };
 const BOZEN: Place = { lon: 11.3547399, lat: 46.4984781 };
 const AFING: Place = { lon: 11.3567147, lat: 46.5637695 };
+const SCHLANDERS: Place = { lon: 10.768806157073763, lat: 46.62731964109522 };
+const LANA: Place = { lon: 11.16041847578976, lat: 46.611267498282615 };
 
 async function getRoute(placeA: Place, placeB: Place) {
     const url = `https://routing.openstreetmap.de/routed-car/route/v1/driving/${placeA.lon},${placeA.lat};${placeB.lon},${placeB.lat}?overview=false&steps=true`;
@@ -95,6 +105,8 @@ function compareStep(a: Step, b: Step) {
 function findSimilarPoints(routeA: Route, routeB: Route) {
     const stepsA = routeA.legs[0].steps
     const stepsB = routeB.legs[0].steps
+    console.log(stepsA);
+
 
     const edgeA = stepsToEdges(stepsA);
     const edgeB = stepsToEdges(stepsB);
@@ -108,20 +120,24 @@ function findSimilarPoints(routeA: Route, routeB: Route) {
         });
     });
 
-    console.log(overlaps);
-    console.log(overlaps.length);
+    // console.log(overlaps);
+    // console.log(overlaps.length);
 }
 
 async function main() {
+    console.time("api")
     const routeA = await getRoute(JENESIEN, BOZEN);
-    const routeB = await getRoute(BOZEN, AFING)
+    const routeB = await getRoute(LANA, BOZEN)
+    console.timeEnd("api")
 
     if (!routeA || !routeB) {
         console.log("No route found");
         return
     }
 
+    console.time("calc")
     findSimilarPoints(routeA, routeB)
+    console.timeEnd("calc")
 }
 
 main()
