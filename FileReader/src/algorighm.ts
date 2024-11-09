@@ -129,6 +129,7 @@ function findSimilarPoints(routeA: Route, routeB: Route) {
     const pointsA = getPointsFromRoute(routeA)
     const pointsB = getPointsFromRoute(routeB)
 
+
     const edgesA = locationsToEdges(pointsA)
     const edgesB = locationsToEdges(pointsB)
 
@@ -153,15 +154,15 @@ function findSimilarPoints(routeA: Route, routeB: Route) {
 
     const firstOverlap = overlaps[0]
 
-    console.log(firstOverlap);
-    console.log(firstOverlapIndex);
-    console.log(overlaps.length);
+    console.log("First overlap:", firstOverlap);
+    console.log("Index: ", firstOverlapIndex);
+    console.log("Length:", overlaps.length);
 
     let distanceSum = 0
     for (let i = 0; i < firstOverlapIndex; i++) {
         distanceSum += distance(edgesB[i])
     }
-    console.log(distanceSum * 2);
+    console.log("Umweg:", distanceSum * 2);
 
 }
 
@@ -177,7 +178,7 @@ async function main() {
     }
 
     console.time("calc")
-    findSimilarPoints(routeA, routeB)
+    findSimilarPoints(routeA, routeA)
     console.timeEnd("calc")
 }
 
