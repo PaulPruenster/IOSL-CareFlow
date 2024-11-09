@@ -247,7 +247,7 @@ async function main() {
     console.log("potentialGroupings", potentialGroupings);
 
     console.log("grouped routes", groupedRoutes);
-    //console.log(uncheckedRoutes);
+    console.log(uncheckedRoutes);
 
     //console.time("calc");
     //findSimilarPoints(routeA, routeB);
