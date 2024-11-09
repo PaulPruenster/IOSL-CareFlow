@@ -155,9 +155,9 @@ function findSimilarPoints(routeA: Route, routeB: Route) {
 
 	const firstOverlap = overlaps[0];
 
-    console.log("First overlap:", firstOverlap);
-    console.log("Index: ", firstOverlapIndex);
-    console.log("Length:", overlaps.length);
+    console.log(firstOverlap);
+    console.log(firstOverlapIndex);
+    console.log(overlaps.length);
 
     let distanceSum = 0
     for (let i = 0; i < firstOverlapIndex; i++) {
@@ -189,59 +189,10 @@ async function main() {
 
 	console.timeEnd("api");
 
-	if (!routeA || !routeB) {
-		console.log("No route found");
-		return;
-	}
-
-	//console.log('uncheckedRoutes before filter', uncheckedRoutes);
-
-	uncheckedRoutes
-		.filter((r) => r.type == 1)
-		.forEach((r) => {
-			if (!groupedRoutes) groupedRoutes = [[r]];
-			else groupedRoutes.push([r]);
-		});
-
-	uncheckedRoutes = uncheckedRoutes.filter((r) => r.type != 1);
-
-	console.log("groupedRoutes", groupedRoutes);
-
-	uncheckedRoutes.forEach((r) => {
-		console.log("enterted foreach");
-		let gotGrouped = false;
-		if (groupedRoutes) {
-			console.log("has grouped");
-			groupedRoutes.forEach((group) => {
-				group.sort((a, b) => a.route!.distance - b.route!.distance);
-				const res = findSimilarPoints(r.route!, group[0].route!);
-				console.log("res", res);
-				if (res != undefined && res.extraDistance < 30) {
-					potentialGroupings.push({ paringId: r.id, groupId: group[0].id, extraDistance: res.extraDistance, sharedDistance: res.length });
-					gotGrouped = true;
-				}
-			});
-		}
-
-		if (gotGrouped == false) {
-			groupedRoutes?.push([r]);
-		}
-	});
-
-	console.log("potentialGroupings", potentialGroupings);
-
-	potentialGroupings.sort((a, b) => a.extraDistance - a.sharedDistance - (b.extraDistance - b.sharedDistance));
-
-	potentialGroupings.forEach((p) => {
-		var trip = uncheckedRoutes.find((f) => p.pairingId == f.id);
-		groupedRoutes!.find((f) => p.groupId == f[0].id)?.push(trip!);
-		potentialGroupings = potentialGroupings.filter((f) => f.pairingId != p.pairingId);
-	});
-
-	console.log("potentialGroupings", potentialGroupings);
-
-	console.log("grouped routes", groupedRoutes);
-	//console.log(uncheckedRoutes);
+    if (!routeA || !routeB) {
+        console.log("No route found");
+        return
+    }
 
 	//console.time("calc");
 	//findSimilarPoints(routeA, routeB);
