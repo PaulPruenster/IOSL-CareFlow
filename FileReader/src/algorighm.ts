@@ -128,20 +128,20 @@ function distance(e: Edge) {
 }
 
 function findSimilarPoints(routeA: Route, routeB: Route) {
-	const pointsA = getPointsFromRoute(routeA);
-	const pointsB = getPointsFromRoute(routeB);
+    const pointsA = getPointsFromRoute(routeA)
+    const pointsB = getPointsFromRoute(routeB)
 
-	const edgesA = locationsToEdges(pointsA);
-	const edgesB = locationsToEdges(pointsB);
+    const edgesA = locationsToEdges(pointsA)
+    const edgesB = locationsToEdges(pointsB)
 
-	const overlaps: Edge[] = [];
-	let firstOverlapIndex = -1;
-	edgesA.forEach((eA) => {
-		edgesB.forEach((eB, edgeIndex) => {
-			if (compareLocations(eA.a, eB.a) && compareLocations(eA.b, eB.b)) {
-				if (firstOverlapIndex == -1) {
-					firstOverlapIndex = edgeIndex;
-				}
+    const overlaps: Edge[] = []
+    let firstOverlapIndex = -1
+    edgesA.forEach(eA => {
+        edgesB.forEach((eB, edgeIndex) => {
+            if (compareLocations(eA.a, eB.a) && compareLocations(eA.b, eB.b)) {
+                if (firstOverlapIndex == -1) {
+                    firstOverlapIndex = edgeIndex
+                }
 
 				overlaps.push(eA);
 			}
@@ -155,15 +155,15 @@ function findSimilarPoints(routeA: Route, routeB: Route) {
 
 	const firstOverlap = overlaps[0];
 
-	console.log(firstOverlap);
-	console.log(firstOverlapIndex);
-	console.log(overlaps.length);
+    console.log("First overlap:", firstOverlap);
+    console.log("Index: ", firstOverlapIndex);
+    console.log("Length:", overlaps.length);
 
-	let distanceSum = 0;
-	for (let i = 0; i < firstOverlapIndex; i++) {
-		distanceSum += distance(edgesB[i]);
-	}
-	console.log(distanceSum * 2);
+    let distanceSum = 0
+    for (let i = 0; i < firstOverlapIndex; i++) {
+        distanceSum += distance(edgesB[i])
+    }
+    console.log(distanceSum * 2);
 
 	return { extraDistance: distanceSum * 2, length: overlaps.length };
 }
