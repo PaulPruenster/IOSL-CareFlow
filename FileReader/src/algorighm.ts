@@ -49,7 +49,7 @@ type Intersection = {
 
 
 const JENESIEN: Place = { lon: 11.3313839, lat: 46.5350348 };
-const BOZEN: Place = { lon: 11.3547399, lat: 46.4984781 };
+const BOZEN: Place = { lon: 11.309738591072547, lat: 46.498583062291424 };
 const AFING: Place = { lon: 11.3567147, lat: 46.5637695 };
 const SCHLANDERS: Place = { lon: 10.768806157073763, lat: 46.62731964109522 };
 const LANA: Place = { lon: 11.16041847578976, lat: 46.611267498282615 };
@@ -109,6 +109,22 @@ function locationsToEdges(steps: [number, number][]) {
     return edges
 }
 
+function distance(e: Edge) {
+    const lon1 = e.a[0]
+    const lat1 = e.a[1]
+    const lon2 = e.b[0]
+    const lat2 = e.b[1]
+
+    const r = 6371; // km
+    const p = Math.PI / 180;
+
+    const a = 0.5 - Math.cos((lat2 - lat1) * p) / 2
+        + Math.cos(lat1 * p) * Math.cos(lat2 * p) *
+        (1 - Math.cos((lon2 - lon1) * p)) / 2;
+
+    return 2 * r * Math.asin(Math.sqrt(a));
+}
+
 function findSimilarPoints(routeA: Route, routeB: Route) {
     const pointsA = getPointsFromRoute(routeA)
     const pointsB = getPointsFromRoute(routeB)
@@ -117,22 +133,39 @@ function findSimilarPoints(routeA: Route, routeB: Route) {
     const edgesB = locationsToEdges(pointsB)
 
     const overlaps: Edge[] = []
+    let firstOverlapIndex = -1
     edgesA.forEach(eA => {
-        edgesB.forEach(eB => {
+        edgesB.forEach((eB, edgeIndex) => {
             if (compareLocations(eA.a, eB.a) && compareLocations(eA.b, eB.b)) {
+                if (firstOverlapIndex == -1) firstOverlapIndex = edgeIndex
                 overlaps.push(eA)
             }
         });
     });
 
-    console.log(overlaps);
+    if (firstOverlapIndex == -1 || overlaps.length == 0) {
+        console.log("No overlaps");
+        return
+    }
+
+    const firstOverlap = overlaps[0]
+
+    console.log(firstOverlap);
+    console.log(firstOverlapIndex);
     console.log(overlaps.length);
+
+    let distanceSum = 0
+    for (let i = 0; i < firstOverlapIndex; i++) {
+        distanceSum += distance(edgesB[i])
+    }
+    console.log(distanceSum);
+
 }
 
 async function main() {
     console.time("api")
     const routeA = await getRoute(SCHLANDERS, BOZEN);
-    const routeB = await getRoute(LANA, BOZEN)
+    const routeB = await getRoute(JENESIEN, BOZEN)
     console.timeEnd("api")
 
     if (!routeA || !routeB) {
