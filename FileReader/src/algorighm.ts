@@ -74,12 +74,28 @@ async function getRoute(placeA: Place, placeB: Place) {
     }
 }
 
-type Edge = {
-    a: Step
-    b: Step
+
+function compareLocations(a: [number, number], b: [number, number]) {
+    return (a[0] == b[0] && a[1] == b[1])
 }
 
-function stepsToEdges(steps: Step[]) {
+function getPointsFromRoute(r: Route) {
+    const ret: [number, number][] = []
+    r.legs[0].steps.forEach(s => {
+        ret.push(s.maneuver.location)
+        s.intersections.forEach(i => {
+            ret.push(i.location)
+        })
+    });
+    return ret
+}
+
+type Edge = {
+    a: [number, number]
+    b: [number, number]
+}
+
+function locationsToEdges(steps: [number, number][]) {
     const edges: Edge[] = []
 
     let a = steps[0]
@@ -93,40 +109,29 @@ function stepsToEdges(steps: Step[]) {
     return edges
 }
 
-function compareStep(a: Step, b: Step) {
-    if (a.maneuver.location[0] == b.maneuver.location[0] &&
-        a.maneuver.location[1] == b.maneuver.location[1]
-    ) {
-        return true
-    }
-    return false
-}
-
 function findSimilarPoints(routeA: Route, routeB: Route) {
-    const stepsA = routeA.legs[0].steps
-    const stepsB = routeB.legs[0].steps
-    console.log(stepsA);
+    const pointsA = getPointsFromRoute(routeA)
+    const pointsB = getPointsFromRoute(routeB)
 
-
-    const edgeA = stepsToEdges(stepsA);
-    const edgeB = stepsToEdges(stepsB);
+    const edgesA = locationsToEdges(pointsA)
+    const edgesB = locationsToEdges(pointsB)
 
     const overlaps: Edge[] = []
-    edgeA.forEach(eA => {
-        edgeB.forEach(eB => {
-            if (compareStep(eA.a, eB.a) && compareStep(eA.b, eB.b)) {
+    edgesA.forEach(eA => {
+        edgesB.forEach(eB => {
+            if (compareLocations(eA.a, eB.a) && compareLocations(eA.b, eB.b)) {
                 overlaps.push(eA)
             }
         });
     });
 
-    // console.log(overlaps);
-    // console.log(overlaps.length);
+    console.log(overlaps);
+    console.log(overlaps.length);
 }
 
 async function main() {
     console.time("api")
-    const routeA = await getRoute(JENESIEN, BOZEN);
+    const routeA = await getRoute(SCHLANDERS, BOZEN);
     const routeB = await getRoute(LANA, BOZEN)
     console.timeEnd("api")
 
