@@ -9,11 +9,15 @@ export const readCSV = (filePath: string): Promise<Transport[]> => {
 		fs.createReadStream(filePath)
 			.pipe(parse({ delimiter: ";", columns: true }))
 			.on("data", (row) => {
+				const [day, month, year] = row.Transportdatum.split(".").map(Number);
+				const [startHour, startMinute] = row.TRANHSTART.split(":").map(Number);
+				const [endHour, endMinute] = row.tranhende.split(":").map(Number);
+
 				const transport: Transport = {
 					transportNumber: row.Transportnummer,
-					transportDate: row.Transportdatum,
-					tranHStart: row.TRANHSTART,
-					tranHEnd: row.tranhende,
+					transportDate: new Date(Date.UTC(year, month - 1, day)), // Create Date object in UTC
+					tranHStart: new Date(Date.UTC(year, month - 1, day, startHour, startMinute)), // Create Date object in UTC
+					tranHEnd: new Date(Date.UTC(year, month - 1, day, endHour, endMinute)), // Create Date object in UTC
 					tranStartPlace: row.tranvonort,
 					tranStartStreet: row.tranvonstrasse,
 					tranDestPlace: row.tranbisort,
@@ -24,7 +28,11 @@ export const readCSV = (filePath: string): Promise<Transport[]> => {
 					carType: row.fuhrparkklasse,
 					wkSection: row.Sektionort,
 				};
-				transports.push(transport);
+				if (isNaN(transport.tranHEnd.getTime())) {
+					console.log("Invalid tranHEnd date:", row.tranhende);
+				} else {
+					transports.push(transport);
+				}
 			})
 			.on("end", () => {
 				resolve(transports);

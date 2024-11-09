@@ -6,10 +6,11 @@ export enum Transportart {
 }
 
 export interface Transport {
+	id?: number;
 	transportNumber: string;
-	transportDate: string;
-	tranHStart: string;
-	tranHEnd: string;
+	transportDate: Date;
+	tranHStart: Date;
+	tranHEnd: Date;
 	tranStartPlace: string;
 	tranStartStreet: string;
 	tranDestPlace: string;
