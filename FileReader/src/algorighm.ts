@@ -137,7 +137,10 @@ function findSimilarPoints(routeA: Route, routeB: Route) {
     edgesA.forEach(eA => {
         edgesB.forEach((eB, edgeIndex) => {
             if (compareLocations(eA.a, eB.a) && compareLocations(eA.b, eB.b)) {
-                if (firstOverlapIndex == -1) firstOverlapIndex = edgeIndex
+                if (firstOverlapIndex == -1) {
+                    firstOverlapIndex = edgeIndex
+                }
+
                 overlaps.push(eA)
             }
         });
@@ -158,7 +161,7 @@ function findSimilarPoints(routeA: Route, routeB: Route) {
     for (let i = 0; i < firstOverlapIndex; i++) {
         distanceSum += distance(edgesB[i])
     }
-    console.log(distanceSum);
+    console.log(distanceSum * 2);
 
 }
 
